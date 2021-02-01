@@ -1,0 +1,307 @@
+:root {
+  --black: #1A1A1A;
+  --white: #FCFCFC;
+  --secondaryBlack: #666666;
+  --dull: #949494;
+  --progress: rgb(148, 148, 148);
+  --optionDefault: #F6F7FA;
+  --optionSelect: #94D6A3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: ThicBold;
+  src: url("./fonts/THICCCBOI-Bold.ttf");
+}
+@font-face {
+  font-family: ThicRegular;
+  src: url("./fonts/THICCCBOI-Regular.ttf");
+}
+@font-face {
+  font-family: Elevetion;
+  src: url("./fonts/Elevation.ttf");
+}
+
+
+.logoWrapper span{
+  font-size: 2.5rem;
+  font-family: ThicBold;
+}
+
+.wrapper{
+  margin-top: 0rem;
+}
+
+.header {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.wrapper .header .logoWrapper{
+  width: 20%;
+  height: 100%;
+  /* margin-top: -1rem; */
+  /* border: 2px solid red; */
+}
+
+.wrapper .header .logoWrapper span{
+  font-family: ThicBold;
+  font-size: 40px;
+  color: var(--black);
+}
+
+
+.getStartedBtn{
+  /* margin: auto 0 !important; */
+  font-family: ThicRegular;
+  width: 7rem;
+  height: 2.3rem;
+  border-radius: 25px;
+  margin-top: 0.75rem;
+  margin-left: 2rem;
+  border: 2px solid  #010101;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  /* color:  rgba(5,136,102, 1); */
+  color: #010101;
+  transition: all 0.5s ease;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.getStartedBtn:hover{
+  border: none;
+  /* background-color: rgba(5,136,102, 0.7); */
+  background-color: #010101;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  border: none;
+  padding-bottom: 4px;
+  font-size: 1rem;
+  font-family: ThicRegular;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  /* font-family: Montserrat, helvetica, arial, sans-serif; */
+  font-weight: 600;
+
+  color: var(--black);
+  transition: all 0.5s ease;
+}
+
+.link:active,
+.link:focus,
+.link:hover {
+  outline: 0;
+  color:rgba(5,136,102, 0.7);
+}
+
+
+
+/* header   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+
+.header {
+  background-color:transparent;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 3;
+  /* display: flex; */
+  margin-top: 0.5rem;
+}
+
+.header .logoWrapper{
+  width: 8rem;
+  /* margin-top: -2rem; */
+  font-size: 2.5rem;
+  background-color:transparent;
+}
+.header .logoWrapper span{
+  font-family: ThicBold;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color:transparent;
+  border: none;
+}
+
+/* menu */
+
+.header .menu {
+  height: 4rem;
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  width: fit-content;
+  /* border: 2px solid blue; */
+  border: none;
+  margin-top: -3rem;
+}
+
+/* menu icon */
+.header .menu-icon {
+  margin-top: -4rem;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  /* background: #333; */
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* section */
+
+/* 48em = 768px */
+
+@media (min-width: 875px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 0px 0px 0px;
+    margin-left: 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+
+
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:250px) {
+
+
+} 
+
+@media only screen and (min-width:768px) {
+
+}
+
+@media only screen and (max-width:874px) {
+  .header{
+    position: fixed;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    margin-top: 0 !important;
+  }
+  .header .logoWrapper{
+    /* margin-top: 1.5rem !important; */
+  }
+  .menu{
+    width: 100% !important;
+    height: 14rem !important;
+  }
+
+  .navicon{
+    margin-top: 0rem;
+  }
+  .menu{
+ 
+  }
+  .menu li{
+    padding-top: 0.5rem;
+    /* border: 2px solid red; */
+    height: 2.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .menu .getStartedBtn{
+    padding: 0;
+    margin: 0;
+  }
+  .hero-section{
+    margin-top: 5rem;
+  }
+  
+}
+
+@media only screen and (min-width:992px) {
+ 
+
+}
+
+@media only screen and (min-width:1200px) {
+
+
+}
