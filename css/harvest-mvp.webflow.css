@@ -5335,8 +5335,14 @@ strong {
   }
 
   .div-block-3 {
-    display: none;
+    display: block;
+    margin-right: 0.5rem;
   }
+
+  .menu-button{
+    display: none !important;
+  }
+
 
   .cta-banner {
     padding-right: 26px;
@@ -6205,6 +6211,14 @@ strong {
     -ms-grid-column-span: 2;
     grid-column-end: span 2;
   }
+  .div-block-3 {
+    display: block;
+    margin-right: 0.5rem;
+  }
+
+  .menu-button{
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -6382,6 +6396,14 @@ strong {
     grid-row-start: 3;
     -ms-grid-row-span: 1;
     grid-row-end: 4;
+  }
+  .div-block-3 {
+    display: block;
+    margin-right: 0.5rem;
+  }
+
+  .menu-button{
+    display: none !important;
   }
 }
 

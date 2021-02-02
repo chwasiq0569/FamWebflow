@@ -86,7 +86,7 @@
            border-bottom: 1px solid#d9dadf;
         } */
         .greenbg{
-         background-color:rgba(46, 204, 113, 0.25) !important;
+         background-color:rgba(128, 128, 128, 0.25) !important;
         }
         .accordion {
             cursor: pointer;
@@ -98,7 +98,7 @@
         }
         .panel {
         /* display: none; */
-        max-height: 0;
+        max-height: auto;
         background-color: white;
         transition: all 0.2s ease-in;
         overflow: hidden;
@@ -128,7 +128,9 @@
             margin-top: 0rem !important;
             margin-bottom: 2rem !important;
         }
-       
+       a{
+           text-decoration: none;
+       }
     
 </style>
 </head>
@@ -136,7 +138,7 @@
   <div class="wrapper">
         <div class="content">
             <div class="logo">
-                <span>fam.</span>
+                <a href="../../platform.html"><span>fam.</span></a>
             </div>
             <div id="stepOne" class="mainStepOne" style="margin-top: -2.5rem !important;">
                 <!-- <div class="headline">
@@ -249,30 +251,30 @@
 
 <script>
 
-document.getElementById("acc1").addEventListener("click", function(){
-    document.getElementById("panel1").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
-    document.getElementById("panel2").style.maxHeight = null;
-    document.getElementById("panel3").style.maxHeight = null;
-    document.getElementById("panel4").style.maxHeight = null;
-})
-document.getElementById("acc2").addEventListener("click", function(){
-    document.getElementById("panel1").style.maxHeight = null;
-    document.getElementById("panel2").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
-    document.getElementById("panel3").style.maxHeight = null;
-    document.getElementById("panel4").style.maxHeight = null;
-})
-document.getElementById("acc3").addEventListener("click", function(){
-    document.getElementById("panel1").style.maxHeight = null;
-    document.getElementById("panel3").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
-    document.getElementById("panel2").style.maxHeight = null;
-    document.getElementById("panel4").style.maxHeight = null;
-})
-document.getElementById("acc4").addEventListener("click", function(){
-    document.getElementById("panel1").style.maxHeight = null;
-    document.getElementById("panel4").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
-    document.getElementById("panel3").style.maxHeight = null;
-    document.getElementById("panel2").style.maxHeight = null;
-})
+// document.getElementById("acc1").addEventListener("click", function(){
+//     document.getElementById("panel1").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
+//     document.getElementById("panel2").style.maxHeight = null;
+//     document.getElementById("panel3").style.maxHeight = null;
+//     document.getElementById("panel4").style.maxHeight = null;
+// })
+// document.getElementById("acc2").addEventListener("click", function(){
+//     document.getElementById("panel1").style.maxHeight = null;
+//     document.getElementById("panel2").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
+//     document.getElementById("panel3").style.maxHeight = null;
+//     document.getElementById("panel4").style.maxHeight = null;
+// })
+// document.getElementById("acc3").addEventListener("click", function(){
+//     document.getElementById("panel1").style.maxHeight = null;
+//     document.getElementById("panel3").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
+//     document.getElementById("panel2").style.maxHeight = null;
+//     document.getElementById("panel4").style.maxHeight = null;
+// })
+// document.getElementById("acc4").addEventListener("click", function(){
+//     document.getElementById("panel1").style.maxHeight = null;
+//     document.getElementById("panel4").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
+//     document.getElementById("panel3").style.maxHeight = null;
+//     document.getElementById("panel2").style.maxHeight = null;
+// })
 
 </script>
 

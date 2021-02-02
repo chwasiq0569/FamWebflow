@@ -94,6 +94,8 @@ body{
     line-height: 0;
     opacity: 0.7;
     margin: 0 auto;
+
+    margin-top: 5.5rem;
 }
 
 .progressBar .mark_icon{
@@ -300,7 +302,7 @@ button:focus {
  #stepThree .options .optionContainer:hover,
  #endSteps .options .optionContainer:hover{
     /* background-color:  rgba(127, 88, 226, 0.6); */
-    background-color :rgba(5,136,102, 1)
+    background-color :rgba(5,136,102, 1);
     color: var(--white);
 } 
 
@@ -373,9 +375,9 @@ button:focus {
 /*  */
 [type=radio]{ 
     position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+     opacity: 1; 
+     width: 0; 
+     height: 0; 
 }
   
   /* IMAGE STYLES */

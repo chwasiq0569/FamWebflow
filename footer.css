@@ -76,6 +76,34 @@ footer .footerLowerSection div{
 }
 
 
+@media only screen and (max-width:980px) {
+    footer .footerUpperSection{
+        flex-direction: column;
+    }
+    footer .footerLowerSection{
+        /* flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between; */
+        display: none;
+    }
+    footer .footerUpperSection .rightSide,
+    footer .footerUpperSection .leftSide{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer .footerUpperSection .rightSide li:nth-child(1) a{
+        margin-right: 1.75rem;
+    }
+    li{
+        padding-bottom: 1.5rem;
+    }
+    footer .footerUpperSection .rightSide li:nth-child(2){
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
 @media only screen and (max-width:768px) {
     .wrapper .main .hero{
       
@@ -115,6 +143,33 @@ footer .footerLowerSection div{
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    footer .footerUpperSection{
+        flex-direction: column;
+    }
+    footer .footerLowerSection{
+        /* flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between; */
+        display: none;
+    }
+    footer .footerUpperSection .rightSide,
+    footer .footerUpperSection .leftSide{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer .footerUpperSection .rightSide li:nth-child(1) a{
+        margin-right: 1.75rem;
+    }
+    li{
+        padding-bottom: 1.5rem;
+    }
+    footer .footerUpperSection .rightSide li:nth-child(2){
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
 }
 @media only screen and (max-width:580px) {
     .CTASection{
@@ -137,25 +192,20 @@ footer .footerLowerSection div{
     footer .footerUpperSection{
         padding-top: 0.5rem;
         flex-direction: column;
-        align-items: center;
         border-bottom: 1px solid var(--optionDefault);
         /* padding-bottom: 3rem; */
         padding-bottom: 0.5rem;
+        flex-direction: column;
+        align-items: center;
     }
     footer .footerUpperSection .leftSide,
     footer .footerUpperSection .rightSide{
         width: 100%;
-        justify-content: center;
-    }
-
-    footer .footerLowerSection{
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        justify-content: space-between;
     }
-
-    footer .footerLowerSection div{
+   
+    /* footer .footerLowerSection div{
         width: 85%;
     }
     footer .footerLowerSection div:nth-child(1){
@@ -169,7 +219,7 @@ footer .footerLowerSection div{
     }
     footer .footerLowerSection div:nth-child(3){
         padding-top: 1rem;
-    }
+    } */
 }
 @media only screen and (max-width:480px) {
     /* .wrapper .main .hero{

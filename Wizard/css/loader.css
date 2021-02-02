@@ -59,7 +59,7 @@
             animation: scale 0.75s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08); }
   
   .ball-pulse > div {
-    background-color: black;
+    background-color: #808080;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -103,7 +103,7 @@
             animation: ball-pulse-sync 0.6s 0s infinite ease-in-out; }
   
   .ball-pulse-sync > div {
-    background-color: black;
+    background-color: #808080;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -131,7 +131,7 @@
       opacity: 0; } }
   
   .ball-scale > div {
-    background-color: black;
+    background-color: #808080;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -154,7 +154,7 @@
       opacity: 0; } }
   
   .ball-scale > div {
-    background-color: black;
+    background-color: #808080;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -171,7 +171,7 @@
     width: 37px;
     height: 40px; }
     .ball-scale-random > div {
-      background-color: black;
+      background-color: #808080;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -219,7 +219,7 @@
   .ball-rotate {
     position: relative; }
     .ball-rotate > div {
-      background-color: black;
+      background-color: #808080;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -231,7 +231,7 @@
         -webkit-animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
                 animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite; }
       .ball-rotate > div:before, .ball-rotate > div:after {
-        background-color: black;
+        background-color: #808080;
         width: 15px;
         height: 15px;
         border-radius: 100%;
@@ -258,14 +258,14 @@
               transform: rotate(360deg); } }
   
   .ball-clip-rotate > div {
-    background-color: black;
+    background-color: #808080;
     width: 15px;
     height: 15px;
     border-radius: 100%;
     margin: 2px;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-    border: 2px solid black;
+    border: 2px solid #808080;
     border-bottom-color: transparent;
     height: 26px;
     width: 26px;
@@ -305,7 +305,7 @@
       left: 0px;
       border-radius: 100%; }
       .ball-clip-rotate-pulse > div:first-child {
-        background: black;
+        background: #808080;
         height: 16px;
         width: 16px;
         top: 7px;
@@ -314,14 +314,14 @@
                 animation: scale 1s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite; }
       .ball-clip-rotate-pulse > div:last-child {
         position: absolute;
-        border: 2px solid black;
+        border: 2px solid #808080;
         width: 30px;
         height: 30px;
         left: -16px;
         top: -2px;
         background: transparent;
         border: 2px solid;
-        border-color: black transparent black transparent;
+        border-color: #808080 transparent #808080 transparent;
         -webkit-animation: rotate 1s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
                 animation: rotate 1s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
         -webkit-animation-duration: 1s;
@@ -346,7 +346,7 @@
       position: absolute;
       left: -20px;
       top: -20px;
-      border: 2px solid black;
+      border: 2px solid #808080;
       border-bottom-color: transparent;
       border-top-color: transparent;
       border-radius: 100%;
@@ -362,7 +362,7 @@
         height: 15px;
         -webkit-animation-duration: 0.5s;
                 animation-duration: 0.5s;
-        border-color: black transparent black transparent;
+        border-color: #808080 transparent #808080 transparent;
         -webkit-animation-direction: reverse;
                 animation-direction: reverse; }
   
@@ -396,7 +396,7 @@
     height: 50px;
     width: 50px;
     border-radius: 100%;
-    border: 2px solid black;
+    border: 2px solid #808080;
     -webkit-animation: ball-scale-ripple 1s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
             animation: ball-scale-ripple 1s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8); }
   
@@ -449,7 +449,7 @@
       width: 50px;
       height: 50px;
       border-radius: 100%;
-      border: 2px solid black;
+      border: 2px solid #808080;
       -webkit-animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8);
               animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(0.21, 0.53, 0.56, 0.8); }
   
@@ -474,7 +474,7 @@
               transform: scale(1); } }
   
   .ball-beat > div {
-    background-color: black;
+    background-color: #808080;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -523,7 +523,7 @@
       -webkit-animation-delay: -0.2s;
               animation-delay: -0.2s; }
     .ball-scale-multiple > div {
-      background-color: black;
+      background-color: #808080;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -650,7 +650,7 @@
       width: 10px;
       height: 10px;
       border-radius: 100%;
-      border: 1px solid black; }
+      border: 1px solid #808080; }
       .ball-triangle-path > div:nth-of-type(1) {
         top: 50px; }
       .ball-triangle-path > div:nth-of-type(2) {
@@ -736,7 +736,7 @@
               transform: scale(0.75); } }
   
   .ball-pulse-rise > div {
-    background-color: black;
+    background-color: #808080;
     width: 15px;
     height: 15px;
     border-radius: 100%;
@@ -819,7 +819,7 @@
       -webkit-animation-duration: 0.65s;
               animation-duration: 0.65s; }
     .ball-grid-beat > div {
-      background-color: black;
+      background-color: #808080;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -909,7 +909,7 @@
       -webkit-animation-duration: 0.63s;
               animation-duration: 0.63s; }
     .ball-grid-pulse > div {
-      background-color: black;
+      background-color: #808080;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -990,7 +990,7 @@
       -webkit-animation: ball-spin-fade-loader 1s -0.12s infinite linear;
               animation: ball-spin-fade-loader 1s -0.12s infinite linear; }
     .ball-spin-fade-loader > div {
-      background-color: black;
+      background-color: #808080;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -1111,7 +1111,7 @@
     -webkit-transform: translate(-15px, -15px);
             transform: translate(-15px, -15px); }
     .ball-zig-zag > div {
-      background-color: black;
+      background-color: #808080;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -1214,7 +1214,7 @@
     -webkit-transform: translate(-15px, -15px);
             transform: translate(-15px, -15px); }
     .ball-zig-zag-deflect > div {
-      background-color: black;
+      background-color: #808080;
       width: 15px;
       height: 15px;
       border-radius: 100%;
@@ -1277,7 +1277,7 @@
             animation: line-scale 1s 0s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08); }
   
   .line-scale > div {
-    background-color: black;
+    background-color: #808080;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -1333,7 +1333,7 @@
             animation-duration: 0.61s; }
   
   .line-scale-party > div {
-    background-color: black;
+    background-color: #808080;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -1371,7 +1371,7 @@
               transform: scaley(1); } }
   
   .line-scale-pulse-out > div {
-    background-color: black;
+    background-color: #808080;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -1411,7 +1411,7 @@
               transform: scaley(1); } }
   
   .line-scale-pulse-out-rapid > div {
-    background-color: black;
+    background-color: #808080;
     width: 4px;
     height: 35px;
     border-radius: 2px;
@@ -1498,7 +1498,7 @@
       -webkit-animation: line-spin-fade-loader 1.2s 0s infinite ease-in-out;
               animation: line-spin-fade-loader 1.2s 0s infinite ease-in-out; }
     .line-spin-fade-loader > div {
-      background-color: black;
+      background-color: #808080;
       width: 4px;
       height: 35px;
       border-radius: 2px;
@@ -1546,7 +1546,7 @@
       border-radius: 100%;
       -webkit-animation: spin-rotate 0.6s 0s infinite linear;
               animation: spin-rotate 0.6s 0s infinite linear;
-      background-image: linear-gradient(transparent 0%, transparent 70%, black 30%, black 100%);
+      background-image: linear-gradient(transparent 0%, transparent 70%, #808080 30%, #808080 100%);
       width: 100%;
       height: 100%; }
   
@@ -1565,7 +1565,7 @@
         font-family: Elevetion;
         src: url("./assets/fonts/Elevation.ttf");
     }
-      .loader{
+    .loader{
           margin-top: 4rem;
         margin-left: 50%;
     }
@@ -1578,7 +1578,7 @@
         text-align: center;
         width: 100%;
         margin-top: 2.5rem;
-        font-weight: 600;
+        font-weight: 500;
         font-family: ThicRegular !important;
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }

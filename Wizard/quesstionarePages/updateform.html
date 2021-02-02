@@ -114,13 +114,28 @@ li{
   transition: all 0.2s ease-out;
   border-radius: 0;
   cursor: pointer;
+  font-weight: 400;
   /* panel.scrollHeight + "px" */
-
 }
 li:hover{
   border-radius: 0;
   background-color:#e5e6eb;
 }
+
+li label{
+  font-weight: 400;
+}
+
+/* #radio{
+  list-style-type: none;
+  height: 3rem;
+  padding: 15px 0 0px 18px;
+  font-size: 15px;
+  transition: all 0.2s ease-out;
+  border-radius: 0;
+  cursor: pointer;
+} */
+
 #getStartedBtnEnabled{
   margin-top: 0rem;
 }
@@ -179,15 +194,23 @@ li:hover{
                           <div class="panel panel1">
                               <button class="accordion">General long-term  Investing</button>
                               <div div class="panel">
-                               <li>Individual</li>
-                               <li>Joint</li>
-                               <li>Trust</li>
+                                
+                                <li><label for="Individual"><input type="radio" id="Individual" name="acc_type" value="Individual">Individual</label><br></li>
+                                <li><label for="Joint"><input type="radio" id="Joint" name="acc_type" value="Joint">Joint</label><br></li>
+                                <li><label for="Trust"><input type="radio" id="Trust" name="acc_type" value="Trust">Trust</label><br></li>
+                                <!-- <input id="radio" type="radio" name="acc_type" value="Individual" > -->
+                               <!-- <li style="border: 2px solid black;">Individual</li> -->
+                               <!-- <li><input type="radio" name="acc_type">Joint</li> -->
+                               <!-- <li><input type="radio" name="acc_type">Trust</li> -->
                               </div>
                               <button class="accordion">Retirement Investing</button>
                               <div class="panel">
-                                <li>Traditional IRA</li>
-                                <li>Roth IRA</li>
-                                <li>SEP IRA</li>
+                                <li><label for="Traditional IRA"><input type="radio" id="Traditional IRA" name="acc_type" value="Traditional IRA">Traditional IRA</label><br></li>
+                                <li><label for="Roth IRA"><input type="radio" id="Roth IRA" name="acc_type" value="Roth IRA">Roth IRA</label><br></li>
+                                <li><label for="SEP IRA"><input type="radio" id="SEP IRA" name="acc_type" value="SEP IRA">SEP IRA</label><br></li>
+                                <!-- <li><input type="radio" name="acc_type">Traditional IRA</li>
+                                <li><input type="radio" name="acc_type" >Roth IRA</li>
+                                <li><input type="radio" name="acc_type" >SEP IRA</li> -->
                               </div>
                           </div>
                         </div>
@@ -211,6 +234,24 @@ li:hover{
 <!-- <script type="text/javascript" src="./quessionare.js"></script> -->
 
 <script>
+
+$("input:radio").change(function () {
+      // $("#nextBtn").attr("disabled", false);
+      checks();
+      console.log("CHANGED")
+                                    });
+function checks(){
+  let val;
+Array.from(document.getElementsByName("acc_type")).forEach(function(acc){
+      if(acc.checked){
+        console.log(acc.value, "CHECKED");
+      
+        val = acc.value;
+      }
+    })
+    return val
+}
+
 window.onload = function(){
   console.log("LOADED")
   Array.from(document.querySelectorAll("li")).forEach(function(item){
@@ -218,7 +259,7 @@ window.onload = function(){
       Array.from(document.querySelectorAll('.panel')).forEach(function(panel){
  panel.style.maxHeight = null;
       })
-     document.querySelector(".accordion1").innerHTML = this.innerText
+     document.querySelector(".accordion1").innerHTML = checks();
     })
 })
 }

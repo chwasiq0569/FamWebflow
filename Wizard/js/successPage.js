@@ -1,5 +1,5 @@
 const loader = `<div class="loaderContainer>
-<div class="preloaderText>
+<div class="preloaderText">
     <h1>Sit back and chill, your journey with us has just begun.</h1>
 </div>
 <div class="loader">
@@ -56,8 +56,8 @@ const content = `<div class="headline">
 <!-- <div class="horizontalLine"></div>  -->
 <div class="messageContainer" >
 <div class="leftSide">
-    <div class="iconContainer">
-        <img src="../assets/icons/icons8-user-secured-96.png" alt="invitation" />
+    <div class="iconContainer greenbg">
+        <img src="../assets/icons/user.svg" alt="invitation" />
     </div>
     <div class="verticalLine">
         <div class="verticalLineInner">
@@ -99,7 +99,7 @@ const content = `<div class="headline">
 <div class="messageContainer" >
 <div class="leftSide">
   <div class="iconContainer greenbg">
-        <img src="../assets/icons/money.svg" alt="invitation" />
+        <img src="../assets/icons/money.svg" alt="money" />
     </div>
     <div class="verticalLine">
         
@@ -120,33 +120,30 @@ console.log(document.getElementById("stepOne"));
 
 document.getElementById("stepOne").innerHTML = loader;
 
-
 setTimeout(function(){
   document.getElementById("stepOne").innerHTML = content;
-
-  
-document.getElementById("acc1").addEventListener("click", function(){
-  document.getElementById("panel1").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
-  document.getElementById("panel2").style.maxHeight = null;
-  document.getElementById("panel3").style.maxHeight = null;
-  document.getElementById("panel4").style.maxHeight = null;
-})
-document.getElementById("acc2").addEventListener("click", function(){
-  document.getElementById("panel1").style.maxHeight = null;
-  document.getElementById("panel2").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
-  document.getElementById("panel3").style.maxHeight = null;
-  document.getElementById("panel4").style.maxHeight = null;
-})
-document.getElementById("acc3").addEventListener("click", function(){
-  document.getElementById("panel1").style.maxHeight = null;
-  document.getElementById("panel3").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
-  document.getElementById("panel2").style.maxHeight = null;
-  document.getElementById("panel4").style.maxHeight = null;
-})
-document.getElementById("acc4").addEventListener("click", function(){
-  document.getElementById("panel1").style.maxHeight = null;
-  document.getElementById("panel4").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
-  document.getElementById("panel3").style.maxHeight = null;
-  document.getElementById("panel2").style.maxHeight = null;
-})
-}, 5000);
+// document.getElementById("acc1").addEventListener("click", function(){
+//   document.getElementById("panel1").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
+//   document.getElementById("panel2").style.maxHeight = null;
+//   document.getElementById("panel3").style.maxHeight = null;
+//   document.getElementById("panel4").style.maxHeight = null;
+// })
+// document.getElementById("acc2").addEventListener("click", function(){
+//   document.getElementById("panel1").style.maxHeight = null;
+//   document.getElementById("panel2").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
+//   document.getElementById("panel3").style.maxHeight = null;
+//   document.getElementById("panel4").style.maxHeight = null;
+// })
+// document.getElementById("acc3").addEventListener("click", function(){
+//   document.getElementById("panel1").style.maxHeight = null;
+//   document.getElementById("panel3").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
+//   document.getElementById("panel2").style.maxHeight = null;
+//   document.getElementById("panel4").style.maxHeight = null;
+// })
+// document.getElementById("acc4").addEventListener("click", function(){
+//   document.getElementById("panel1").style.maxHeight = null;
+//   document.getElementById("panel4").style.maxHeight = document.getElementById("panel1").scrollHeight + "px";
+//   document.getElementById("panel3").style.maxHeight = null;
+//   document.getElementById("panel2").style.maxHeight = null;
+// })
+}, 2000);
